@@ -78,7 +78,20 @@ while i < 10:
 # 2. 리스트에서 순서대로 단어를 가져와 화면에 출력한다
 # 3. 프로그램 사용자는 단어를 그대로 입력한다.
 # 4. 입력이 끝나면 전체 문제, 맞은 문제, 틀린 문제의 수가 출력된다.
+words = ['study', 'overwatch', 'pizza', 'I love python']
 
+# 영단어 연습
+print("-typing English-")
+count = 0
+for word in words:
+    user_input = input(word)
+    if word == user_input:
+        count += 1
+
+# 결과 출력
+print("전체 문제 개수: %d" % len(words))
+print("맞힌 문제 개수: %d" % count)
+print("틀린 문제 개수: %d" % (len(words)-count))
 
 ## 반복문 mission4: turtle을 활용하여 무지개 그리기 (이후 함수에도 연개할 예정이므로 반드시 수행)
 ### for 반복문 Mission2: turtle 모듈을 활용하여 무지개 만들기
