@@ -193,7 +193,7 @@ renekton.character_info()
 
 # [이번주 추가 문제: 덩치]
 ## url: https://www.acmicpc.net/problem/7568
-
+'''
 import sys
 
 ## 입력 가져오기(수정 X)
@@ -210,3 +210,4 @@ for i in range(N):
 
 
 ## 등수출력
+'''
