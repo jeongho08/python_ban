@@ -16,8 +16,6 @@
 
 # [리스트 자료형] - 6주차 이어서...
 '''
-import turtle
-
 youtuber = ['10월 악토', "로빈하르트", "우왁굳", "T1 Faker", "논리왕전기", "나무늘보"]
 print(youtuber)
 
@@ -48,23 +46,28 @@ print(youtuber)
 ## 리스트 제어하기5: 리스트 슬라이싱
 ## 방법: 리스트이름[처음:끝+1]
 ## 연습문제>> 처음~3번쨰, 2번째~끝, 3번째~4번째에 위치한 유투버들만, 그리고(':'를 활용하여) 리스트 전체을 출력해보자.
-
+print(youtuber[:5])
 
 ## 리스트 제어하기6: 리스트 길이 구하기
 ## 방법: len(리스트이름)
 ## 연습문제>> 현재 리스트에 포함된 데이터의 개수를 구해보자
-
+print(len(youtuber))
 
 ## 리스트 제어하기7: 리스트 정렬하기
 ## 방법1: 리스트이름.sort()  <- 오름차순 정렬
 ## 방법2: 리스트이름.sort(reverse=True)  <- 내림차순 정렬
 ## 연습문제>> 유투버들을 오름차순과 내림차순으로 정렬한 결과를 각각 출력해보자
-'''
 
+youtuber.sort()
+print(youtuber)
+youtuber.sort(reverse=True)
+print(youtuber)
+'''
 ## 리스트 mission1
 ## :RGB 색상(red, green,blue)을 리스트에 저장하고
 ##  turtle 모듈을 활용하여 색상이 서로 다른 직선을 그려보자
 ##  (설정: 굵기(30), 선 길이(200))
+'''
 import turtle
 
 color = ['red', 'green', 'blue']
@@ -92,9 +95,7 @@ t.pendown()
 t.forward(200)
 
 t.mainloop()
-## 리스트 mission2
-## 다음은 1번~5번 학생의 1분간 턱걸이 개수이다
-
+'''
 
 
 # [반복문]
@@ -105,38 +106,51 @@ t.mainloop()
 
 ## range() 함수 연습문제: range()를 활용하여
 # 여러 활용 해보기 & list로 만들어 결과 확인하기
+'''
 print(list(range(10)))
 print(list())
-
+'''
 
 ## for 반복문
 ## : "횟수 or 시퀀스 자료"에 대한 반복문
 ## [문법] for 변수 in 시퀀스자료:
 ##           반복할 문장
 ## for문 연습문제1: range()를 활용한 "횟수" 반복. 원하는 문자열을 10번 반복해서 출력해보자.
-for i in range(10):
-    print('집에 보내주세요')
-
+'''
+for i in range(90):
+    print ("중급반 가고 싶다")
+'''
 ## for문 연습문제2: list를 활용하여 for 반복문 실행시켜 보기
-youtubers = ['10월 악토', '로빈하르트']
-
+"""
+youtubers = ['10월 악토', "로빈하르트", "우왁굳", "T1 Faker", "논리왕전기", "나무늘보"]
+for youtuber in youtubers:
+    print(f'{youtuber}정말 좋아요')
+"""
 ## for문 연습문제3: 문자열을 활용하여 for 반복문 실행시켜보기
+'''
 for word in "안녕하세요":
-    print(word)
-
+    print(word, end='                                  ')
+'''
 
 ## 이중 for문 연습문제: 이중 for문을 활용하여 높이5의 직각삼각형 만들기
+'''
 for i in range(1, 6):
     for j in range(i):
         print
-
+'''
 ## while 반복문
 ## : "조건"에 대한 반복문
 ## [문법] while 조건:
 ##          반복할 문장
 ## while문 연습문제1: 기본적인 활용
 
-
+i = 0
+while i <5:
+    print("정호 중급반 가즈아아아아아아아")
+    i += 1      #i = i + 1
+    if i == 3:
+        break
+print('끝났다~!')
 ## while문 연습문제2: 무한루프와 break를 활용하여 게임 시작메뉴를 만들어보자
 
 
