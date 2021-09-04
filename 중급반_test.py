@@ -41,6 +41,7 @@ print(type(champion))
 # 7번 문제
 # 주제: 클래스
 class Dog():
+    def __init__(self, bark, attack,):
     def bark(self):
         print("멍멍")
     def attack(self):
@@ -50,6 +51,21 @@ class Dog():
     def translate_attack(self):
         print("크르릉..컹컹")
 
-
+class Dog:
+    def __init__(self, bark, attack):
+        self.bark = bark
+        self. = health
+        self.attack = attack
+        self.speed = speed
+        print(f"나는 아주아주 무서운 {self.name}다!!")
+    def decrease_health(self, num):          # num만큼 체력을 감소시키는 메서드
+        self.health -= num
+    def get_health(self):                    # Monster의 체력을 반환해주는 메서드
+        return self.health
+    def info(self):                    # Monster의 현재 정보를 출력하는 메서드
+        print(f'[{self.name} 스테이터스]')
+        print(f'체력: {self.health}')
+        print(f'공격력: {self.attack}')
+        print(f'속도: {self.speed}')
 
 
