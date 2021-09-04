@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # 8주차 정규수업(10:00~12:00) mission
 '''
 [수업을 시작하기 전에!]
@@ -33,10 +32,9 @@ t.speed(10)                # 거북이 속도 설정
 t.pensize(pen_size)
 
 # for 반복문 실행(무지개 그리기)
-for i in range(7):
-    t.setheading(90)
-    t.penup()
-    t.setpos(rainbow_size/2 - i )
+"""
+# <Mission: 이 부분을 작성해 주세요>
+"""
 '''
 
 # [함수]
@@ -52,13 +50,6 @@ for i in range(7):
 '''
 import turtle
 # DrawStar_100 함수 정의해주기
-def DrawStar_100():
-    """한 변의 길이가 100인 별모양 그리기 함수"""
-    for i in range(5):
-        turtle.forward(100)
-        turtle.right(144)
-        turtle.forward(100)
-        turtle.left(72)
 
 win = turtle.Screen()
 DrawStar_100()
@@ -68,19 +59,10 @@ win.mainloop()
 ## >> 한 변의 길이를 입력하면, 그 한변의 길이를 가지는 별을 그리는 DrawStar()
 '''
 import turtle
-
-# DrawStar() 함수 정의해주기
-def DrawStar(length):
-    """한 변의 길이가 100인 별모양 그리기 함수"""
-    for i in range(5):
-        turtle.forward(length)
-        turtle.right(144)
-        turtle.forward(length)
-        turtle.left(72)
-        
+# DrawStar() 함수 정의해주기 
 
 win = turtle.Screen()
-DrawStar(999)
+DrawStar(200)
 win.mainloop()
 '''
 ## 연습문제3: 입력X, 출력O인 함수
@@ -88,22 +70,18 @@ win.mainloop()
 '''
 import random
 # getRandomNum() 함수 정의해주기
-def getRandomNum():
-    return random.randint(1, 100)
 
 num = getRandomNum()
 print(num)
 '''
 ## 연습문제4: 입력O, 출력O인 함수
 ## >> a,b를 입력하면 두 수의 합을 반환하는 add()
-def add(x, y):
-    return x+y
-
+'''
 # add 함수 정의해주기 
 
-X = add(47, 82)
+X = add(100, 55)
 print(X)
-
+'''
 
 ## 함수 Mission: 앞서 반복문 Mission4에서 그린 무지개를 "함수"로 만들어보자
 ## 조건은 ppt 16p참고
@@ -132,10 +110,7 @@ t = turtle.Turtle('turtle')
 t.speed(0)
 
 # 이제 draw_rainbow를 활용하여 무지개를 마음껏 그려보자(작성할 부분3)
-draw_rainbow(t, 100,)
-draw_rainbow(t, 200,)
-draw_rainbow(t, 200, 15, -100)
-draw_rainbow(t, 200, 15, -100, 51)
+
 
 turtle.mainloop()
 '''

@@ -53,8 +53,18 @@ print(d.__dir__())
 class Cat:
     def cry(self):
         print("야옹!")
-        def tail_wag(self)
-            print ("야옹!" 야옹)
+    def tail_wag(self)
+        print ("야옹!" 야옹)
+cat = Cat()
+'''
+'''
+class Dog:
+    def bark(self):
+        print("버어어억")
+    def tail_wag(self):
+        print("멍멍")
+dog = Dog()
+dog.bark()
 '''
 ## <생성자>
 ## : 객체가 생성될 때 자동으로 호출되는 메서드.
@@ -86,7 +96,48 @@ class Monster:
 '''
 ## step3) Monster 클래스에 메서드(decrease_health, get_health, info)를 추가한 후,
 ##        goblin과 wolf 객체를 생성하여 각 메서드들을 호출해보자.
+'''
+class Monster:
+    def __init__(self, name, health, attack, speed):
+        self.name = name
+        self.health = health
+        self.attack = attack
+        self.speed = speed
+        print(f"나는 아주아주 무서운 {self.name}이다!")
+    def decrease_health(self, num):
+        self.health -= num
+'''
+## <생성자>
+## : 객체가 생성될 때 자동으로 호출되는 메서드.
+## [문법] class 클래스이름:
+##           def __init__(self, 입력변수들):
+##               초기화 실행 문장
 
+## 생성자 연습문제
+## : Monster 클래스를 만들고 step에 따라 생성자와 메서드가 추가된 Monster 클래스를 만들어보자.
+## step1) 가장 기본적인 Monster 클래스를 만들어 보자
+##        : say 메서드만을 가지는 Monster 클래스
+'''
+class Monster:
+    def say(self):
+        print("나는 아주아주 무서운 몬스터다")
+'''
+## step2) Monster 클래스에 속성(name, health, attack, speed)을 추가하여 초기화해보자.
+##        또한, 인스턴스 생성 시에 say의 내용이 출력되도록 만들어보자.
+'''
+class Monster:
+    def __init__(self, name, health, attack, speed):
+        self.name = name
+        self.health = health
+        self.attack = attack
+        self.speed = speed
+        print(f"나는 아주아주 무서운 {self.name}이다!")
+        def decrease_health(self, num):
+            self.health -= num
+'''
+## step3) Monster 클래스에 메서드(decrease_health, get_health, info)를 추가한 후,
+##        goblin과 wolf 객체를 생성하여 각 메서드들을 호출해보자.
+'''
 class Monster:
     def __init__(self, name, health, attack, speed):
         self.name = name
@@ -97,6 +148,23 @@ class Monster:
     def decrease_health(self, num):
         self.health -= num
 
+goblin = Monster('고블린', 2, 3, 4)
+goblin.decrease_health(879352)
+print(goblin.health)
+'''
+## <상속>
+## : 부모 클래스의 속성과 메서드를 자식클래스가 물려받을 수 있도록 만든 기능
+## 상속을 사용하는 이유: 클래스들에 중복된 코드를 제거하고 유지보수를 하기 위해 사용하기 위해서 사용.
+
+## <메서드 오버라이딩(덮어쓰기)>
+## : 부모 클래스에 있는 메서드를 자식클래스에서 동일한 이름으로 다시 만드는 것
+
+## 상속 연습문제
+## :Monster 클래스를 만들고, 상속을 활용하여 Wolf, Shark, Dragon 클래스를 만들어,각각의 객체를 생성해보자.
+##
+## step1) 부모 클래스: Monster 클래스 정의하기
+## - 속성: name, health, attack
+## - 메서드: move("self.name 지상에서 이동하기"를 출력하는 메서드, 이후 해당 몬스터의 이동방법이 출력되도록 할 것임.)
 
 ## <상속>
 ## : 부모 클래스의 속성과 메서드를 자식클래스가 물려받을 수 있도록 만든 기능
