@@ -8,24 +8,14 @@
 
 # 2번 문제
 # 주제: 조건문
-A = int(input("90>>> "))
-B = int(input("80>>> "))
-C = int(input("70>>> "))
-D = int(input("60>>> "))
-F = int(input(">>> "))
-
-
-if 95>=:
-    print("95점 축하합니다")
-else:
-    print("보충 대상자입니다. 당신의 방학은 이제 제껍니다 ㅎㅎ")
 
 # 3번 문제
 # 주제:리스트
+'''
 champion = ['티모', '아리', '리신', '람머스', '바드', '마스터 이']
 print(champion)
 print(type(champion))
-
+'''
 # 4번 문제
 # 주제: for 반복문(2중 for문) - 어려움
 
@@ -36,7 +26,15 @@ print(type(champion))
 
 # 6번 문제
 # 주제: 함수
+def product_3num(x, y, z):
+    return x*y*z
 
+x = int(input("첫번째 숫자를 입력하세요: "))
+y = int(input("두번째 숫자를 입력하세요: "))
+z = int(input("세번째 숫자를 입력하세요. "))
+print(product_3num(x, y, z))
+print(product_3num(2, 5, 7))
+'''
 
 # 7번 문제
 # 주제: 클래스
@@ -68,4 +66,4 @@ class Dog:
         print(f'공격력: {self.attack}')
         print(f'속도: {self.speed}')
 
-
+'''

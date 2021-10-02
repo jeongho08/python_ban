@@ -69,7 +69,7 @@ win.mainloop()
 
 ## Tkinter 위젯: PhotoImage()
 ## 저장된 이미지를 GUI화면에 출력해보자.
-
+'''
 from tkinter import *
 
 win = Tk()
@@ -80,10 +80,10 @@ lb = Label(win, image=img)
 lb.pack()
 
 win.mainloop()
-
+'''
 ## Tkinter 위젯: Button() - 버튼 생성하기
 ## 참고 url: https://076923.github.io/posts/Python-tkinter-3/
-
+'''
 from tkinter import *
 
 win = Tk()
@@ -96,9 +96,11 @@ btn1.pack(side="left", padx=20, )
 btn2.pack(side="left", padx=20)
 
 win.mainloop()
+'''
 
 # Tkinter 위젯: Button() - 버튼 이벤트 처리하기
 ## Button을 누르면 설정한 이벤트(callback 함수)가 실행되도록 만들어보자.
+'''
 from tkinter import *
 
 def callback():
@@ -116,9 +118,22 @@ btn = Button(win, text="클릭", command=callback)
 btn.pack()
 
 win.mainloop()
+'''
 
 ## Tkinter 위젯: Text() - 연습문제: Text 위젯 생성하기
 
+from tkinter import *
+
+win = Tk()
+win.title("Text 위젯 연습문제")
+
+lb = Label(win, text="안녕하세요")
+lb.pack()
+T = Text(win, width=80, height=10)
+T.pack()
+T.insert(1.0, "텍스트 위젯 연습문제 \n Hello world! \n 지금 생각나는 문장을 입력해봅시다 :D")
+
+win.mainloop()
 
 ## Tkinter 위젯: Canvas() - Canvas 생성하기 & 여러가지 도형 그리기
 
