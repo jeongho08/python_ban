@@ -5,6 +5,9 @@
 # 1번 문제
 # 주제: 문자열 입출력 + 연산자
 
+string = input("지금 하고 싶은 말을 입력해주세요>>")
+n = int(input("몇 번?>>"))
+print(string * n)
 
 # 2번 문제
 # 주제: 조건문
@@ -26,6 +29,7 @@ print(type(champion))
 
 # 6번 문제
 # 주제: 함수
+'''
 def product_3num(x, y, z):
     return x*y*z
 
@@ -38,6 +42,7 @@ print(product_3num(2, 5, 7))
 
 # 7번 문제
 # 주제: 클래스
+'''
 class Dog():
     def __init__(self, bark, attack,):
     def bark(self):
@@ -65,5 +70,5 @@ class Dog:
         print(f'체력: {self.health}')
         print(f'공격력: {self.attack}')
         print(f'속도: {self.speed}')
-
+   
 '''
